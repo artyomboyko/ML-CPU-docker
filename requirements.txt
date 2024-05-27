@@ -1,0 +1,13 @@
+scikit-learn
+imbalanced-learn
+asyncio
+pathlib
+git-lfs
+
+ipywidgets
+IProgress
+JupyterLab
+
+matplotlib
+seaborn
+plotly-express
