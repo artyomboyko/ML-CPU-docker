@@ -4,7 +4,7 @@ FROM ubuntu:22.04
 # Обновим ОС и установим Python & Pip
 USER root
 RUN apt-get -qq update -y && apt-get -qq upgrade -y
-RUN apt-get --qq install -y python3 python3-pip nano mc htop iotop 
+RUN apt-get -qq install -y python3 python3-pip nano mc htop iotop 
 
 
 # Установим необоходимые пакеты Python
