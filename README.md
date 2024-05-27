@@ -7,3 +7,7 @@ docker build -t artyomboyko/ml-cpu-docker .
 ```
 
 # Комадна для запуска контейнера
+
+```console
+docker run --rm -p 9999:8888 -v .\.jupyter:/home/developer/project/.jupyter -v .\workspace\:/home/developer/workspace/ -it artyomboyko/ml-cpu
+```

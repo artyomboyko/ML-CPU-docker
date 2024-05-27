@@ -7,8 +7,9 @@ RUN apt-get -qq update -y && apt-get -qq upgrade -y
 RUN apt-get -qq install -y python3 python3-pip nano mc htop iotop 
 
 
-# Установим необоходимые пакеты Python
+# Установим необходимые пакеты Python
 COPY requirements.txt /tmp
+RUN pip install --no-cache-dir -r /tmp/requirements.txt
 
 # Создадим пользователя для запуска JyputerLab
 RUN useradd -m -s /bin/bash developer
